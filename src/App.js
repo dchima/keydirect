@@ -1,6 +1,6 @@
-import { isAndroid, isIOS, isFirefox } from 'react-device-detect';
-import logo from './logo.svg';
-import logo1 from './logo.png';
+import { isAndroid, isIOS } from 'react-device-detect';
+import { Helmet } from 'react-helmet';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
@@ -9,8 +9,16 @@ function App() {
   if (isAndroid) window.location.replace('https://play.google.com/store/apps/details?id=com.qucoon.keystonemobilebankingapp&hl=en&gl=US')
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>KeyMobile</title>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content='KeyMobile App' />
+        <meta name="twitter:description" content='Banking made easy with Keystone Bank' />
+        <meta name="twitter:image" content='https://res.cloudinary.com/dxnchima/image/upload/v1615642369/keystone/panel_ouobtm.png' />
+      </Helmet>
       <header className="App-header">
-        <img src={logo1} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           redirecting you to our mobile app...
         </p>
