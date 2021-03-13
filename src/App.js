@@ -15,7 +15,7 @@ function App() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content='KeyMobile App' />
         <meta name="twitter:description" content='Banking made easy with Keystone Bank' />
-        <meta name="twitter:image" content='https://res.cloudinary.com/dxnchima/image/upload/v1615642369/keystone/panel_ouobtm.png' />
+        <meta name="twitter:image" content='https://res.cloudinary.com/dxnchima/image/upload/v1615642373/keystone/logo_axwnvj.ico' />
       </Helmet>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
